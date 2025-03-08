@@ -28,7 +28,7 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
             // await SendMessageToGroupAsync("안녕하세요, 이 메시지는 그룹에 전송됩니다.");
             string imageUrl = "https://centercoin.kr/1.jpg"; // 이미지 URL
 
-            var messageText = "🐰 *새로운 게임 111 Welcome to BadBunny Tap2Earn!* 🥕\n\n" +
+            var messageText = "🐰 *새로운 게임333  Welcome to BadBunny Tap2Earn!* 🥕\n\n" +
                     "Hop into the paws of BadBunny, unlock treasures, and piece together forgotten tales!\n\n" +
                     "👉 *Tap Into the Adventure* \n" +
                     "Ready your fingers, slice those carrots, and earn your Airdrop XP!\n\n" +
@@ -74,15 +74,15 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
             {
                 new []
                 {
-                   // InlineKeyboardButton.WithUrl("🚀 Start Game", $"https://centercoin.kr/?chat_id={GroupChatId}")
+                   // InlineKeyboardButton.WithUrl("🚀 Start Game", $"https://centercoin.kr/?chat_id={chatId}")
                    // InlineKeyboardButton.WithWebApp("🚀 Start Game", "t.me/OkGameRoom_bot/ugame")
-                    InlineKeyboardButton.WithUrl("🚀 Start Game", $"t.me/OkGameRoom_bot/ugame/?chat_id={GroupChatId}")
+                    InlineKeyboardButton.WithUrl("🚀 Start Game", $"t.me/OkGameRoom_bot/ugame?chat_id={chatId}&username={{username}}")
                 },
                 new []
                 {
                   //  InlineKeyboardButton.WithUrl("🚀 Start Game", $"https://centercoin.kr/?chat_id={GroupChatId}")
                    // InlineKeyboardButton.WithUrl("📢 Join Our Community", "t.me/OkGameRoom_bot/ugame")
-                    InlineKeyboardButton.WithUrl("🚀 Start Game", $"t.me/OkGameRoom_bot/ugame/?chat_id={GroupChatId}")
+                    InlineKeyboardButton.WithUrl("🚀 Start Game", $"t.me/OkGameRoom_bot/ugame?chat_id={chatId}&username={{username}}")
                 }
             });
 
