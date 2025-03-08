@@ -13,13 +13,13 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
     {
 
 
-        // 안대표
-        private static readonly string Token = "8114311955:AAGjac5TGgmb8BDQaS1sBXFITOv4qOEe76s"; // 텔레그램 봇 토큰
-        private static readonly long GroupChatId = -1002295706262; // "5597895053"; // 메시지를 보낼 대상의 채팅 ID .            
+        // 
+        private static readonly string Token = "811431195T4qOEe76s"; // 텔레그램 봇 토큰
+        private static readonly long GroupChatId = -1002; // "953"; // 메시지를 보낼 대상의 채팅 ID .            
 
 
-        //private static readonly string Token = "7656905376:AAGYB_pa0s_brGJ-yyZiP0zzm3Onpy1LQzg";  // 봇 토큰 입력
-        //private static readonly long GroupChatId = -1002275129371; // 그룹 채팅 ID
+        //private static readonly string Token = "76569-yyZiP0zzm3Onpy1LQzg";  // 봇 토큰 입력
+        //private static readonly long GroupChatId = -1071; // 그룹 채팅 ID
 
         private static readonly TelegramBotClient botClient = new TelegramBotClient(Token);
         [STAThread]
@@ -27,6 +27,13 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
         {
             // await SendMessageToGroupAsync("안녕하세요, 이 메시지는 그룹에 전송됩니다.");
             string imageUrl = "https://centercoin.kr/1.jpg"; // 이미지 URL
+
+
+
+
+
+
+
 
             var messageText = "🐰 *새로운 게임333  Welcome to BadBunny Tap2Earn!* 🥕\n\n" +
                     "Hop into the paws of BadBunny, unlock treasures, and piece together forgotten tales!\n\n" +
@@ -36,7 +43,7 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
                     "*Friends 🔪* – Recruit and earn 5,000 tokens per friend!\n" +
                     "*Special Tasks 🐾* – Complete tasks to earn big rewards!\n\n" +
                     "_Stay alert for Airdrop Alerts 🍄!_";
-            long ChatId = -1002275129371; // 그룹 채팅 ID
+            long ChatId = -10029371; // 그룹 채팅 ID
 
             await SendPhotoAsync(GroupChatId.ToString(), imageUrl, messageText);
             //// PlaySendPhotoAsync(GroupChatId.ToString());
@@ -63,7 +70,6 @@ namespace 텔레그램_그룹에_붓_추가_그룹_메세지_Ver_2
                 text: "클릭하면 CenterCoin 웹사이트로 이동합니다!",
                 replyMarkup: inlineKeyboard
             );
-
             Console.WriteLine("메시지 전송 완료!");
         }
 
